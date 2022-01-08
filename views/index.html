@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>User registration form</h1>
+    </div>
+    <div class="formelement" style="color:blue">
+        <form action="/" method="post">
+            
+            <label for="first" class="form-label">Name<small>*</small></label>
+            <input type="text" id="first" class="form-control" aria-describedby="AgeOfCar" 
+                name="username">
+
+            <label for="second">age<small>*</small></label>
+            <input id="second" name="age" required="required" type="number" class="form-control" min="7" max="111">
+
+            <label for="third">Email<small>*</small></label>
+            <input id="third" name="email" required="required" class="form-control">
+
+
+            <label for="fourth">Address<small>*</small></label>
+            <input id="fourth" name="address" required="required" class="form-control" type="text">
+
+            <label for="fifth">Income<small>*</small></label>
+            <input id="sixth" name="income" required="required" class="form-control" type="text">
+
+      
+            <label for="sixth">Are you married<small>*</small></label>
+            <select class="form-select" name="married" id="sixth" required="required">
+                <option value="1">yes</option>
+                <option value="0">no</option>
+            </select>
+
+            
+
+            <br><br>
+            <button type="submit" id="sub" class="btn btn-primary btn-lg">Submit Form</button>
+        </form>
+
+        <br><br>
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: xxx-large;
+            padding: 20px;
+        }
+        small{
+            color: red;
+        }
+
+        .header {
+            margin: 0 20px 0 0;
+            text-align: center;
+            font-size: xx-large;
+            background-color: rgb(245, 250, 253);
+            text-transform: capitalize;
+        }
+        .formelement {
+            text-align: left;
+            width: 50%;
+            border: rgb(235, 235, 235) solid 5px;
+            border-radius: 2%;
+            margin: 0 auto;
+            padding: 75px 10px 50px 30px;
+            
+        }
+        label {
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        
+        button {
+            width: 100%;
+            align-items: center;
+        }
+    </style>
+</body>
+
+</html>
